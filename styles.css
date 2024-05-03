@@ -1,0 +1,54 @@
+
+
+a {
+  color: DarkSlateGrey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: DarkGrey;
+}
+
+body {
+  background: linear-gradient(CornflowerBlue, DarkSeaGreen) no-repeat center fixed;
+  background-size: cover;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 100%;
+}
+
+#main {
+  background-color: Lavender;
+  border-radius: 12px;
+  height: 100vh;
+  margin: auto;
+  max-width: 700px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+
+#df-logo {
+  background-color: Teal;
+  float: right;
+  padding: 10px;
+}
+
+#github-icon {
+  height: auto;
+  width: 50px;
+}
+
+h1 {
+  color: #006030;
+  font-size: 2em;
+}
+
+h2 {
+  color: #003060;
+  font-size: 1.5em;
+  margin-left: 10%;
+}
+
+p {
+  font-size: 20px;
+}
