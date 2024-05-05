@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo cp index.php styles.css /srv/www/htdocs/
