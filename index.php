@@ -1,5 +1,20 @@
 <?php
 declare(strict_types=1);
+
+function separator(): void {
+	echo <<<END
+		<svg class="sep" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<defs>
+				<linearGradient id="sep_grad" x1="0%" x2="100%" y1="0%" y2="0%">
+					<stop offset="0%" stop-color="teal" />
+					<stop offset="50%" stop-color="turquoise" />
+					<stop offset="100%" stop-color="teal" />
+				</linearGradient>
+			</defs>
+			<ellipse rx="50" ry="50" cx="50" cy="50" fill="url(#sep_grad)" />
+		</svg> 
+	END;
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +35,7 @@ declare(strict_types=1);
 		<div id="main">
 
 			<div>
-				<div id="df-logo">LOGO</div> <!-- Make this a cool animation thing insted -->
+				<div id="head_anim">ANIMATION</div>
 
 				<h1>Darren Fielding</h1>
 
@@ -34,13 +49,13 @@ declare(strict_types=1);
 				<h2>Software Developer</h2>
 			</div>
 
-			<div style="text-align: center;">
-				<svg height="10" width="300" xmlns="http://www.w3.org/2000/svg">
-					<ellipse rx="150" ry="5" cx="150" cy="5" style="fill:teal" />
-				</svg> 
-			</div>
+			<?php separator(); ?>
 
-			<?php echo "<h3>This is a test</h3>"; ?>
+			<h3>About</h3>
+			<p>Darren has been programming for 8 years. Spent 4 years studying Computing Science at the University of Glasgow.</p>
+
+
+			<?php separator(); ?>
 
 		</div>
 

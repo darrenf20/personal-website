@@ -1,4 +1,4 @@
-* { border: solid red 1px; }
+/* * { outline: solid red 1px; } */
 
 a {
   color: DarkSlateGrey;
@@ -14,20 +14,29 @@ body {
   background-size: cover;
   font-family: Verdana, Arial, sans-serif;
   font-size: 100%;
+
+  /*
+   * The following attributes will center children horizontally and
+   * vertically if the content is smaller than the height of the page.
+   */
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 #main {
   background-color: Lavender;
   border-radius: 12px;
-  height: 100vh;
   margin: auto;
   max-width: 700px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
+  max-height: 100%;
+  padding: 10px 40px 10px 40px;
 }
 
-#df-logo {
+#head_anim {
   background-color: Teal;
   float: right;
   padding: 10px;
@@ -42,6 +51,13 @@ body {
 #github-icon {
   height: auto;
   width: 40px;
+}
+
+.sep {
+	height: 12px;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 h1 {
@@ -59,4 +75,6 @@ h2 {
 
 p {
   font-size: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
