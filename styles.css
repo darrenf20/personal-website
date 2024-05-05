@@ -1,4 +1,4 @@
-
+* { border: solid red 1px; }
 
 a {
   color: DarkSlateGrey;
@@ -33,20 +33,28 @@ body {
   padding: 10px;
 }
 
+#github_link {
+	float: right;
+	display: flex;
+	align-items: center;
+}
+
 #github-icon {
   height: auto;
-  width: 50px;
+  width: 40px;
 }
 
 h1 {
   color: #006030;
   font-size: 2em;
+  max-width: 50%;
 }
 
 h2 {
   color: #003060;
   font-size: 1.5em;
-  margin-left: 10%;
+  max-width: 50%;
+  padding-left: 10%;
 }
 
 p {
